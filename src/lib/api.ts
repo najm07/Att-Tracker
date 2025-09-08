@@ -1,4 +1,5 @@
-const API_BASE = '/api';
+const isDev = import.meta.env.DEV;
+const API_BASE = isDev ? '/api' : 'http://localhost:3001/api';
 
 // Groups API
 export const groupsApi = {
